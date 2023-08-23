@@ -14,11 +14,6 @@ void setup(void){
 
 void loop(void){
     // This code will run indefinitly.
-    HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,0);
-    HAL_Delay(250);
-    HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,1);
-    HAL_Delay(250);
-    printf("Easy come, easy go !\n\r");
- //   HAL_UART_Transmit(&huart2,"Test \n\r",8,-1);
+   
 }
 
