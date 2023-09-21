@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include <stdio.h>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -116,7 +117,9 @@ int main(void)
   MX_GPIO_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
-  setup();
+setvbuf(stdin, NULL, _IONBF, 0);	// Buffer d'entrée à 0 pour que scanf fonctionne.
+  
+setup();
   /* USER CODE END 2 */
 
   /* Infinite loop */
